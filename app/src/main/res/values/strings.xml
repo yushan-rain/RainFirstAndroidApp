@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">experiment_three</string>
+    <string name="title_activity_recycler">RecyclerActivity</string>
+</resources>

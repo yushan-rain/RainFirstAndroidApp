@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部区域：测试文字 + 跳转按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <!-- 实验三用的测试文字 -->
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="用于测试的内容"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- 跳转实验五的按钮 -->
+        <Button
+            android:id="@+id/btn_go_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去实验五" />
+    </LinearLayout>
+
+    <!-- 实验一的列表 -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

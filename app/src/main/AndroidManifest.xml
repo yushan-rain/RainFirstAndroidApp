@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 通知权限 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="experiment_three"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExperimentThree">
+
+        <!-- 1. 主界面 (实验1-4)，作为启动页 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="experiment_three"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. 实验五界面 (RecyclerView)，作为普通页面供跳转 -->
+        <activity
+            android:name=".RecyclerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_recycler"
+            android:theme="@style/Theme.ExperimentThree"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>
