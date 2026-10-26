@@ -1,4 +1,8 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">experiment_three</string>
     <string name="title_activity_recycler">RecyclerActivity</string>
+=======
+    <string name="app_name">LayoutExperiment</string>
+>>>>>>> 0a4acaccaa90224f8c399c30a31f14fc0c04bc23
 </resources>
